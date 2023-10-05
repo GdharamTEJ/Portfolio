@@ -113,6 +113,7 @@ body {
   animation-delay: 2s, 3s;
 }
 
+/* SOCIAL MEDIA ICONS */
 .social-media a {
   display: inline-flex;
   justify-content: center;
@@ -135,9 +136,10 @@ body {
 .social-media a:hover {
   background: #0ef;
   color: #1f242d;
-  box-shadow: 0 0 15px #0ef;
+  box-shadow: 0 0 10px #0ef;
 }
 
+/* DOWNLOAD BUTTON */
 .btn {
   display: inline-block;
   padding: 12px 28px;
