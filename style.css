@@ -4,7 +4,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -12,13 +28,18 @@ body {
   color: #fff;
 }
 
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 10%;
-  background: transparent;
+  padding: 2rem 10%;
+  background: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +76,13 @@ body {
   color: #0ef;
 }
 
-/* SECTION-home */
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
+}
+
+/* HOME */
 .home {
   position: relative;
   width: 100%;
@@ -70,8 +97,9 @@ body {
   max-width: 600px;
 }
 
+/* Home-Paragraph */
 .home-content h3 {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 700;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
@@ -79,7 +107,7 @@ body {
 }
 
 .home-content h3:nth-of-type(2) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   animation: slideTop 1s ease forwards;
   animation-delay: 0.7s;
 }
@@ -89,7 +117,7 @@ body {
 }
 
 .home-content h1 {
-  font-size: 56px;
+  font-size: 5.6rem;
   font-weight: 700;
   margin: -3px 0;
   opacity: 0;
@@ -106,7 +134,7 @@ body {
 
 /* PROFILE PICTURE */
 .home-img img {
-  max-width: 450px;
+  width: 22vw;
   margin-right: -20px;
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
@@ -127,7 +155,7 @@ body {
   color: #0ef;
   text-decoration: none;
   margin: 30px 15px 30px 0;
-  transition: 0.2s ease;
+  transition: 0.5s ease;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: calc(0.2s * var(--i));
@@ -136,7 +164,7 @@ body {
 .social-media a:hover {
   background: #0ef;
   color: #1f242d;
-  box-shadow: 0 0 10px #0ef;
+  box-shadow: 0 0 8px #0ef;
 }
 
 /* DOWNLOAD BUTTON */
@@ -147,13 +175,18 @@ body {
   border-radius: 40px;
   box-shadow: 0 0 10px #0ef;
   font-size: 16px;
-  color: #1f242d;
+  color: var(--second-bg-color);
   letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.5s ease;
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: 2s;
+}
+
+.btn:hover {
+  box-shadow: none;
 }
 
 /* KEYFRAMES ANIMATION */
