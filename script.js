@@ -14,6 +14,13 @@ var typed = new Typed(".multiple-text", {
 });
 
 /*===== Toggle Icon NavBar =====*/
+let menuIcon = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+menuIcon.oneclick = () => {
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
+};
 
 /*===== Scroll Sections Active Link =====*/
 let sections = document.querySelectorAll("section");
@@ -40,4 +47,8 @@ window.onscroll = () => {
   let header = document.querySelector("header");
 
   header.classList.toggle("sticky", window.scrollY > 100);
+
+  /*===== Remove Toggle Icon and NavBar When Click NavBar Links (scroll) =====*/
+  menuIcon.classList.remove("bx-x");
+  navbar.classList.remove("active");
 };
