@@ -1,5 +1,5 @@
 /*===== Type Writer Animation in HomePage =====*/
-var typed = new Typed(".multiple-text", {
+const typed = new Typed(".multiple-text", {
   strings: [
     "Fullstack Developer",
     "Ethical Hacker",
@@ -52,3 +52,18 @@ window.onscroll = () => {
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
 };
+
+/*===== Scroll Reveal =====*/
+ScrollReveal({
+  reset: true,
+  distance: "80px",
+  duration: 2000,
+  delay: 200,
+});
+
+ScrollReveal().reveal(".heading", { origin: "top" });
+ScrollReveal().reveal(".services-container, .portfolio-box, .contact form", {
+  origin: "bottom",
+});
+ScrollReveal().reveal(".about-img", { origin: "left" });
+ScrollReveal().reveal(".about-content", { origin: "right" });
