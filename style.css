@@ -207,6 +207,7 @@ section {
 
 .about-img img {
   width: 34vw;
+  margin-bottom: 7rem;
 }
 
 .heading {
@@ -230,7 +231,8 @@ section {
 
 /* SERVICES SECTION */
 .services h2 {
-  margin-bottom: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 11rem;
 }
 
 .btn-RM {
@@ -294,7 +296,7 @@ section {
 }
 
 .portfolio h2 {
-  margin-bottom: 4rem;
+  margin-bottom: 7rem;
 }
 
 .portfolio-container {
