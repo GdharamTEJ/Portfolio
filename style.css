@@ -142,7 +142,7 @@ section {
 
 /* PROFILE PICTURE */
 .home-img img {
-  width: 28vw;
+  width: 36vw;
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
   animation-delay: 2s, 3s;
@@ -206,7 +206,7 @@ section {
 }
 
 .about-img img {
-  width: 26vw;
+  width: 34vw;
 }
 
 .heading {
