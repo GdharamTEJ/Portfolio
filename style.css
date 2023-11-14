@@ -56,7 +56,7 @@ section {
 
 /* LOGO */
 .logo {
-  font-size: 25px;
+  font-size: 40px;
   color: #fff;
   text-decoration: none;
   font-weight: 675;
@@ -224,7 +224,7 @@ section {
 }
 
 .about-content p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   margin: 2rem 0 3rem;
 }
