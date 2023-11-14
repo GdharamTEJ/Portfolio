@@ -1,5 +1,5 @@
 /*===== Type Writer Animation in HomePage =====*/
-const typed = new Typed(".multiple-text", {
+var typed = new Typed(".multiple-text", {
   strings: [
     "Fullstack Developer",
     "Ethical Hacker",
@@ -7,6 +7,15 @@ const typed = new Typed(".multiple-text", {
     "YouTuber",
     "Gamer",
   ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});
+
+/*===== About Me =====*/
+var typed = new Typed(".type-dev", {
+  strings: ["All Rounder ?"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
