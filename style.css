@@ -142,6 +142,8 @@ section {
 
 /* PROFILE PICTURE */
 .home-img img {
+  background-color: #323946;
+  border-radius: 18rem;
   width: 36vw;
   opacity: 0;
   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
@@ -231,8 +233,8 @@ section {
 
 /* SERVICES SECTION */
 .services h2 {
-  margin-top: 1rem;
-  margin-bottom: 11rem;
+  margin-top: 4.5rem;
+  margin-bottom: 5.5rem;
 }
 
 .btn-RM {
@@ -296,7 +298,8 @@ section {
 }
 
 .portfolio h2 {
-  margin-bottom: 7rem;
+  margin-top: 4.5rem;
+  margin-bottom: 5.5rem;
 }
 
 .portfolio-container {
@@ -370,6 +373,7 @@ section {
 
 /* CONTACT SCTION */
 .contact h2 {
+  margin-top: 4.5rem;
   margin-bottom: 3rem;
 }
 
